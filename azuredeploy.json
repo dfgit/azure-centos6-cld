@@ -132,6 +132,13 @@
         "description": "The size of the VMs deployed in the cluster (defaults to Standard_DS14)"
       }
     },
+    "installCDH": {
+      "type": "string",
+      "defaultValue": "N",
+      "metadata": {
+        "description": "Y for Installation of CDH, N for just cluster config"
+      }
+    },
     "company": {
       "type": "string",
       "defaultValue": "Company",

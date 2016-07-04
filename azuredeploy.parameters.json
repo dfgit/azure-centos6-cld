@@ -52,6 +52,9 @@
     },
     "jobFunction": {
       "value": "Storage"
+    },
+    "installCDH": {
+      "value": "N"
     }
   }
 }
