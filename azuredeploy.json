@@ -134,9 +134,9 @@
     },
     "installCDH": {
       "type": "string",
-      "defaultValue": "N",
+      "defaultValue": "False",
       "metadata": {
-        "description": "Y for Installation of CDH, N for just cluster config"
+        "description": "True for Installation of CDH, False for just cluster config"
       }
     },
     "company": {
@@ -223,7 +223,7 @@
   "variables": {
     "templateAPIVersion":"2015-11-01",
     "resourceAPIVersion":"2015-06-15",
-    "installCDH":"True",
+    "installCDH":"False",
     "addressPrefix":"[parameters('addressPrefix')]",
     "subnetPrefix":"[parameters('subnetPrefix')]",
     "scriptsUri": "https://raw.githubusercontent.com/dfgit/azure-centos6-cld/master",
