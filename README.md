@@ -1,7 +1,7 @@
 # This is a modified version of the Cloudera Azure templates found at: https://github.com/Azure/azure-quickstart-templates/tree/master/cloudera-on-centos
 # USE AT YOUR OWN RISK!  All the different permutations have not be tested
 # YOU ARE RESPONSIBLE FOR YOUR OWN CLUSTER
-# Original pull from source: 2016.06.27
+Original pull from source: 2016.06.27
 
 The goal is to create a centos 6 cluster that is configured and ready for Cloudera Manager to be downloaded an installed. The nodes on the cluster are 
 configured using the original scripts to put the CentOS machines in a state ready for Cloudera to be installed.
@@ -52,8 +52,7 @@ The major differences are:
 Everything else is in the other .json setup files and the shell scripts in the scripts directory.
 
 
-# Click here to begin deployment
-# DANF VERSION!!  DS14 Deployment
+# Click here to begin deployment of the DANF VERSION DS14 Deployment
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdfgit%2Fazure-centos6-cld%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png" />
 </a>
@@ -81,6 +80,7 @@ The template expects the following parameters:
 | subnetName | Subnet name for the virtual network where resources will be provisioned | clouderaSubnet |
 | tshirtSize | T-shirt size of the Cloudera cluster (Eval, Prod) | Eval |
 | vmSize | The size of the VMs deployed in the cluster (Defaults to Standard_DS14) | Standard_DS14 |
+| INSTALLCDH | Install CDH (default is False) | False |
 
 
 Topology
