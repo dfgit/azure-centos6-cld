@@ -4,7 +4,7 @@
 Original pull from source: 2016.06.27
 
 The goal is to create a centos 6 cluster that is configured and ready for Cloudera Manager to be downloaded an installed. The nodes on the cluster are 
-configured using the original scripts to put the CentOS machines in a state ready for Cloudera to be installed.
+configured using the original scripts to put the CentOS VM's and the supporting Azure infrastructure in a state ready for Cloudera to be installed.
 
 The major differences are:
 
