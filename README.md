@@ -18,31 +18,33 @@ The major differences are:
 
 2. The 3 master nodes have the same disk configuration as before
 
-  Filesystem      Size  Used Avail Use% Mounted on
-  /dev/sda1       512M   98M  388M  21% /boot
-  /dev/sda2        22G  2.1G   18G  11% /
-  /dev/sda3        32G  168M   30G   1% /var
-  /dev/sdb1       237G   63M  225G   1% /mnt/resource
-  /dev/sdc        541G   74M  536G   1% /log
-  /dev/sdd        541G   74M  536G   1% /var/lib/pgsql
-  /dev/sde        541G   74M  536G   1% /data/dfs
-  /dev/sdf        541G   74M  536G   1% /log/cloudera/zookeeper
-  tmpfs            60G     0   60G   0% /dev/shm
+| Filesystem | Size | Used | Avail | Use% | Mounted on |
+|:--- |:---|:---|:--- |:---|:---|
+| /dev/sda1 | 512M | 98M | 388M | 21% | /boot |
+| /dev/sda2 | 22G | 2.1G | 18G | 11% | / |
+| /dev/sda3 | 32G | 168M | 30G | 1% /var |
+| /dev/sdb1 | 237G | 63M | 225G | 1% /mnt/resource |
+| /dev/sdc | 541G | 74M | 536G | 1% /log |
+| /dev/sdd | 541G | 74M | 536G | 1% /var/lib/pgsql |
+| /dev/sde | 541G | 74M | 536G | 1% /data/dfs |
+| /dev/sdf | 541G | 74M | 536G | 1% /log/cloudera/zookeeper |
+| tmpfs | 60G | 0 | 60G | 0% /dev/shm |
 
   Note: The initialization scripts create the directory /var/lib/pgsql, but postgres is not configured.  You will have to install the metadata databases
 
 3. The data nodes template has been chnaged to have only 3 data disks
 
-  Filesystem      Size  Used Avail Use% Mounted on
-  /dev/sda1       512M   98M  388M  21% /boot
-  /dev/sda2        22G  2.1G   18G  11% /
-  /dev/sda3        32G  168M   30G   1% /var
-  /dev/sdb1       237G   63M  225G   1% /mnt/resource
-  /dev/sdc        541G   74M  536G   1% /log
-  /dev/sdd        1.1T   75M  1.1T   1% /data1
-  /dev/sde        1.1T   75M  1.1T   1% /data2
-  /dev/sdf        1.1T   75M  1.1T   1% /data0
-  tmpfs            60G     0   60G   0% /dev/shm
+| Filesystem | Size | Used | Avail | Use% | Mounted on |
+|:--- |:---|:---|:--- |:---|:---|
+| /dev/sda1 | 512M | 98M | 388M | 21% | /boot |
+| /dev/sda2 | 22G | 2.1G | 18G | 11% | / |
+| /dev/sda3 | 32G | 168M | 30G | 1% | /var |
+| /dev/sdb1 | 237G | 63M | 225G | 1%  | mnt/resource |
+| /dev/sdc | 541G | 74M | 536G | 1%  | log |
+| /dev/sdd | 1.1T | 75M | 1.1T | 1% | /data1 |
+| /dev/sde | 1.1T | 75M | 1.1T | 1% | /data2 |
+| /dev/sdf | 1.1T | 75M | 1.1T | 1% | /data0 |
+| tmpfs | 60G | 0 | 60G | 0% | /dev/shm |
 
   Note: The initialization scripts will create a directory /data[1-3]/impala/scratch
 
