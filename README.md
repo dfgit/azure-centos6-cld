@@ -1,4 +1,6 @@
-# This is a modified version of the Cloudera Azure templates found at: https://github.com/Azure/azure-quickstart-templates/tree/master/cloudera-on-centos
+# This is a modified version of the Cloudera Azure templates found at: 
+https://github.com/Azure/azure-quickstart-templates/tree/master/cloudera-on-centos
+
 # USE AT YOUR OWN RISK!  All the different permutations have not be tested
 # YOU ARE RESPONSIBLE FOR YOUR OWN CLUSTER
 Original pull from source: 2016.06.27
