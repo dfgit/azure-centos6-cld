@@ -22,13 +22,13 @@ The major differences are:
 |:--- |:---|:---|:--- |:---|:---|
 | /dev/sda1 | 512M | 98M | 388M | 21% | /boot |
 | /dev/sda2 | 22G | 2.1G | 18G | 11% | / |
-| /dev/sda3 | 32G | 168M | 30G | 1% /var |
-| /dev/sdb1 | 237G | 63M | 225G | 1% /mnt/resource |
-| /dev/sdc | 541G | 74M | 536G | 1% /log |
-| /dev/sdd | 541G | 74M | 536G | 1% /var/lib/pgsql |
-| /dev/sde | 541G | 74M | 536G | 1% /data/dfs |
-| /dev/sdf | 541G | 74M | 536G | 1% /log/cloudera/zookeeper |
-| tmpfs | 60G | 0 | 60G | 0% /dev/shm |
+| /dev/sda3 | 32G | 168M | 30G | 1% | /var |
+| /dev/sdb1 | 237G | 63M | 225G | 1% | /mnt/resource |
+| /dev/sdc | 541G | 74M | 536G | 1% | /log |
+| /dev/sdd | 541G | 74M | 536G | 1% | /var/lib/pgsql |
+| /dev/sde | 541G | 74M | 536G | 1% | /data/dfs |
+| /dev/sdf | 541G | 74M | 536G | 1% | /log/cloudera/zookeeper |
+| tmpfs | 60G | 0 | 60G | 0% | /dev/shm |
 
   Note: The initialization scripts create the directory /var/lib/pgsql, but postgres is not configured.  You will have to install the metadata databases
 
